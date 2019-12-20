@@ -14,7 +14,9 @@ prolog = Prolog()
 
 
 def list_programs():
-	print("asdf")
+	for file_name in file_store:
+		new_name = file_name.replace("_","/")
+		print(new_name + "\n")
 
 def print_help():
 	print("Choose one of the following commands:")
